@@ -8,37 +8,51 @@
     <title>Tailwind Portfolio</title>
     
 </head>
-<body class="bg-cyan-400">
-    <section id="home">
-    <div class="h-64">
+<body class="bg-image bg-no-repeat w-full bg-cover" style="background-image: url(images/pexels-photo-3733925.webp);">
+    <section id="home" >
+    <div class="h-64 "style="background-image: url()"">
         <nav class="w-full fixed top-9">
             <div class="container mx-auto py-5 flex items-center justify-between bg-red-300 rounded-md">
                 <div class="flex items-center gap-2">
-                    <h2 class="text-2xl font-bold text-black">Designmoon</h2>
+                    <h2 class="text-2xl font-bold text-black"><span class=" text-black">M.</span>Pivoine</h2>
                     </div>
+                    <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <!-- <div class="absolute md-hidden text-2xl right-10 cursor-pointer" id="nav-close">
+                        <!-- <i class="fa-solid fa-xmark"></i> -->
+
                     <ul class="hidden md:flex space-x-10 font-bold text-sm" >
                         <li class="hover:text-gray-400"><a href ="#home"class="duratio-500">How it works</a></li>
                         <li class="hover:text-gray-400"><a href ="#services">Services</a></li>
                         <li class="hover:text-gray-400"><a href ="#work">Our work</a></li>
                         <li class="hover:text-gray-400"><a href ="#prices">Pricing</a></li>
-                        <li class="hover:text-gray-400"><a href ="#faqs">FQAs</a></li>
+                        <li class="hover:text-gray-400"><a href ="#faqs">Contacts</a></li>
                     </ul>
                     <div class=" hidden md:flex space-x-3 px-[10px] font-bold text-sm">
                     <a href ="#" class="hover:bg-gray-400">Login</a>
                     <a href ="#" class="text-white border-s-white p-[10px] bg-red-300 px-3 rounded-md border">Get started</a>
                 </div>
-                   
                 </div>
-                <ul id="menu" class="hidden  absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                <ul id="nav-menu" class=" hidden overflow-y-auto translate-y-big absolute5  text-center top-0 w-1/2 py-14 rounded-b-3xl space-10 text-white  bg-red-300">
                     <li><a href ="#home">How it works</a></li>
                         <li><a href ="#services">Services</a></li>
                         <li><a href ="#work">Our work</a></li>
                         <li><a href ="#prices">Pricing</a></li>
-                        <li><a href ="#faqs">FQAs</a></li>
+                        <li><a href ="#contacts">Contact</a></li>
                 </ul>
-        </nav>
+                
+                <!-- <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </nav> -->
    </div>
-        <div class="text-center">
+        <div class="text-center md">
         <h1 class ="font-semibold text-6xl text-black">New Method for Website Design and Building</h1>
         <h6 class=" mt-5 text-base">A subcription based design with unlimited revisions</h1>
             <button class=" mt-7 border p-2 px-5 mr-4 bg-black text-white">View pricing</button>
@@ -89,44 +103,45 @@
             quasi nobis saepe architecto iusto similique! Placeat tempore porro beatae.
         </p>
        </div>
-       <div class="p-5  w-full flex flex-wrap gap-5 justify-center sm:p-0">
-       <div class="w-30 bg-white md:w-4/12 shadow-xl rounded-lg flex flex-col p-5 gap-3 items-center">
-        <i class="fa-regular fa-image"></i>
-        <h1 class="font-medium text-lg">UI/UX Design</h1>
-        <p class="w-1/2 text-center text-gray-500">I am interested in working on UI and UX designs for small and large businesses</p>
-        <a class="text-indigo-400 font-semibold text-sm" href="#">Read More</a>
-       </div>
+       <div class="p-5  w-full flex flex-wrap gap-5 justify-center">
+       
+        <div class="w-30 bg-white md:w-4/12 shadow-xl rounded-lg flex flex-col p-5 gap-3 items-center">
+            <i class="fa-regular fa-image"></i>
+            <h1 class="font-medium text-lg">Web Designs</h1>
+            <p class="w-1/2 text-center text-gray-500">I am interested in working on UI and UX designs for small and large businesses</p>
+            <a class="text-indigo-400 font-semibold text-sm" href="#">Read More</a>
+           </div>
        <div class="w-30 bg-white md:w-4/12 shadow-xl rounded-lg flex flex-col gap-3 p-5 items-center">
         <i class="fa-solid fa-xmark"></i>
-        <h1 class="font-medium taxe-lg">UI/UX Design</h1>
+        <h1 class="font-medium taxe-lg">Small Projects of React</h1>
         <p class="w-1/2 text-center text-gray-500">I am interested in working on UI and UX designs for small and large businesses</p>
         <a class="text-indigo-400 font-semibold text-sm" href="#">Read More</a>
        </div>
 
        <div class="w-30 bg-white md:w-4/12 shadow-xl rounded-lg flex flex-col gap-3 p-5 items-center">
         <i class="fa-solid fa-twitter"></i>
-        <h1 class="font-medium text-lg">UI/UX Design</h1>
+        <h1 class="font-medium text-lg">Mathematics</h1>
         <p class="text-gray-500">I am interested in working on UI and UX designs for small and large businesses</p>
         <a class="text-indigo-400 font-semibold text-sm" href="#">Read More</a>
        </div>
 
        <div class="w-30  bg-white md:w-4/12 shadow-xl rounded-lg flex flex-col gap-3 p-5 items-center">
         <i class="fa-brands fa-tiktok"></i>
-        <h1 class="font-medium text-lg">UI/UX Design</h1>
+        <h1 class="font-medium text-lg">Economics</h1>
         <p class="text-gray-500">I am interested in working on UI and UX designs for small and large businesses</p>
         <a class="text-indigo-400 font-semibold text-sm" href="">Read More</a>
        </div>
 
        <div class="w-30 bg-white md:w-4/12 shadow-xl rounded-lg flex flex-col gap-3 p-5 items-center">
         <i class="fa-brands fa-github"></i>
-        <h1 class="font-medium text-lg">UI/UX Design</h1>
+        <h1 class="font-medium text-lg">Computer Scince</h1>
         <p class="text-gray-500">I am interested in working on UI and UX designs for small and large businesses</p>
         <a class="text-indigo-400 font-semibold text-sm" href="">Read More</a>
        </div>
 
        <div class="w-30 bg-white md:w-4/12 shadow-xl rounded-lg flex flex-col gap-3 p-5 items-center">
         <i class="fa-solid fa-bezier-curve"></i>
-        <h1 class="font-medium text-lg">UI/UX Design</h1>
+        <h1 class="font-medium text-lg">Leadership</h1>
         <p class="text-gray-500">I am interested in working on UI and UX designs for small and large businesses</p>
         <a class="text-indigo-400 font-semibold text-sm" href="">Read More</a>
        </div>
@@ -134,7 +149,8 @@
  </section>
 <!-- ---------!last------- -->
 <section id="prices">
-<div >
+    <div class="justify-center text-center">
+<div  >
     <div class="container mx-auto text-center">
         <h1 class="text-black mt-52 font-semibold text-3xl">Contact</h1>
         <h1 class="text-2xl mt-3 mb-4">Have a Question?</h1>
@@ -146,6 +162,10 @@
         <textarea  class="p-2 w-full md:wd-1/2 ring-1 ring-gray-400 rounded-sm mb-3 border-0" col3="30" rows="10" placeholder="Message..."></textarea>
         <button class="w-full md:w-1/2 bg-red-300 text-black font-medium px-3 py-2 rounded-md cursor-pointer justify-center">Submit</button>
      </form>
+     </div>
+        <div class="flex-w-full min-h-screen justify-center items-center">
+
+        </div>
      </div>
 </section>
 
@@ -163,6 +183,6 @@
 
 
 
-    <script src="./style.js"></script>
+    <script src="style.js"></script>
 </body>
 </html>
