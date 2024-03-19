@@ -1,9 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+
+
+
+
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      "sm":"480px"
+      "sm":"480px",
+      colors:{
+        primary:{
+          50:'#191718'
+        }
+      }
     },
     spacing:{
       "big":"48rem"
